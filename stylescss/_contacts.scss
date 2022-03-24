@@ -1,0 +1,90 @@
+#contacts {
+  display: flex;
+  flex-direction: column;
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    position: relative;
+    & > p {
+      font-size: 18px;
+    }
+    & input {
+      padding: 10px;
+      text-transform: capitalize;
+    }
+
+    & .name,
+    .email,
+    .project,
+    .textA {
+      position: absolute;
+      font-size: 12px;
+      left: 10px;
+      color: red;
+    }
+
+    & .name {
+      bottom: 235px;
+    }
+    & .email {
+      bottom: 174px;
+    }
+    & .project {
+      bottom: 114px;
+    }
+    & .textA {
+      bottom: 54px;
+    }
+
+    & textarea {
+      padding: 10px;
+      resize: none;
+      text-transform: capitalize;
+    }
+
+    & > button {
+      align-self: flex-start;
+      font-size: 18px;
+      border: none;
+      background: #000;
+      text-transform: uppercase;
+      margin-top: 10px;
+      padding: 10px 20px;
+      color: white;
+      cursor: pointer;
+      &:hover {
+        color: rgba(255, 255, 255, 0.8);
+      }
+    }
+  }
+}
+
+@media (max-width: 425px) {
+  #contacts {
+    form {
+      & .name,
+      .email,
+      .project,
+      .textA {
+        position: absolute;
+        font-size: 9px;
+        left: 10px;
+        color: red;
+      }
+  
+      & .name {
+        bottom: 235px;
+      }
+      & .email {
+        bottom: 174px;
+      }
+      & .project {
+        bottom: 114px;
+      }
+      & .textA {
+        bottom: 54px;
+      }
+    }
+  }
+}

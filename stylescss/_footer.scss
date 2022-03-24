@@ -1,0 +1,48 @@
+footer{
+  .footerList{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 24px;
+    margin: 40px 0 20px;
+    .socialC{
+      display: flex;
+      gap: 20px;
+      svg{
+        display: flex;
+        align-items: center;
+        width: 32px;
+        height: 32px;
+      }
+    }  
+  }
+}
+@media (max-width:768px) {
+  footer{
+    .footerList{
+      font-size: 18px;
+      .socialC{
+        gap: 10px;
+        svg{
+          width: 28px;
+          height: 28px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width:425px) {
+  footer{
+    .footerList{
+      font-size: 16px;
+      .socialC{
+        gap: 10px;
+        svg{
+          width: 24px;
+          height: 24px;
+        }
+      }
+    }
+  }
+}

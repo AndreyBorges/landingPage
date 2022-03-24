@@ -1,0 +1,80 @@
+#projects {
+  display: flex;
+  flex-direction: column;
+  margin-top: 60px;
+
+  .listProjects {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 20px 20px;
+
+    & li {
+      position: relative;
+      &:nth-of-type(4n + 1)::before {
+        position: absolute;
+        content: "Country's house";
+        font-style: italic;
+        max-width: 60ch;
+        padding: 10px;
+        background: rgba(0, 0, 0, 0.589);
+        color: white;
+        border-bottom-right-radius: 8px;
+      }
+
+      &:nth-of-type(4n + 2)::before {
+        position: absolute;
+        content: "City's house";
+        font-style: italic;
+        max-width: 60ch;
+        padding: 10px;
+        background: rgba(0, 0, 0, 0.589);
+        color: white;
+        border-bottom-right-radius: 8px;
+      }
+
+      &:nth-of-type(4n + 3)::before {
+        position: absolute;
+        content: "Mountain's house";
+        font-style: italic;
+        max-width: 60ch;
+        padding: 10px;
+        background: rgba(0, 0, 0, 0.589);
+        color: white;
+        border-bottom-right-radius: 8px;
+      }
+
+      &:nth-of-type(4n + 4)::before {
+        position: absolute;
+        content: "Beach's house";
+        font-style: italic;
+        max-width: 60ch;
+        padding: 10px;
+        background: rgba(0, 0, 0, 0.589);
+        color: white;
+        border-bottom-right-radius: 8px;
+      }
+    }
+
+    & li img {
+      height: 400px;
+      width: 400px;
+      object-fit: cover;
+      object-position: center;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  #projects {
+    .listProjects {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+}
+@media (max-width: 425px) {
+  #projects {
+    .listProjects {
+      grid-template-columns: 1fr;
+    }
+  }
+}

@@ -1,0 +1,23 @@
+#bgArchitetsF{
+  background-image: url(../assets//roteiro-dubai-3-dias.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: bottom;
+  background-size: cover;
+  height: 600px;
+  position: relative;
+  &:before {
+    content: "";
+    background: linear-gradient(
+      180deg,
+      rgba(255, 255, 255, .1),
+      transparent,
+      transparent
+    );
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+  }
+}

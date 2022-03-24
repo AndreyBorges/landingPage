@@ -1,0 +1,492 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,400;0,500;0,700;1,200;1,400&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  outline: none;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  font-family: "MontSerrat", arial, sans-serif;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+h1 {
+  font-size: 36px;
+  margin-bottom: 60px;
+}
+
+h1,
+h2,
+h3,
+a {
+  letter-spacing: 0.3rem;
+  font-weight: 400;
+}
+
+.defaultValue {
+  padding-inline: 40px;
+  max-width: 1440px;
+  margin: 20px auto 40px;
+}
+
+@media (max-width: 768px) {
+  .defaultValue {
+    padding-inline: 10px;
+  }
+  h1 {
+    margin-bottom: 40px;
+  }
+}
+
+@media (max-width: 425px) {
+  h1 {
+    font-size: 28px;
+  }
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header span {
+  font-size: 18px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.2rem;
+}
+
+header span::before {
+  content: "BR";
+  font-weight: 500;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+header .menu {
+  display: flex;
+  gap: 40px;
+  text-transform: capitalize;
+  font-size: 18px;
+}
+
+header .menu a {
+  color: black;
+  font-weight: 200;
+  letter-spacing: 0.3rem;
+  padding: 10px;
+}
+
+header .menu a:hover {
+  color: rgba(0, 0, 0, 0.459);
+}
+
+@media (max-width: 768px) {
+  header .menu {
+    gap: 0px;
+  }
+}
+
+@media (max-width: 425px) {
+  header .menu {
+    display: none;
+  }
+}
+
+#bgArchitetsH {
+  background-image: url(../assets//roteiro-dubai-3-dias.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: bottom;
+  background-size: cover;
+  height: 710px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+#bgArchitetsH:before {
+  content: "";
+  background: linear-gradient(180deg, transparent, transparent, rgba(255, 255, 255, 0.3));
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+#bgArchitetsH h1 {
+  font-weight: 400;
+  font-size: 36px;
+  color: white;
+  text-shadow: 5px 5px 3px rgba(0, 0, 0, 0.8);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+#bgArchitetsH h1::before {
+  content: "BR";
+  font-weight: 500;
+  width: 80px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-shadow: initial;
+  background: rgba(0, 0, 0, 0.7);
+}
+
+@media (max-width: 768px) {
+  #bgArchitetsH h1 {
+    padding-inline: 20px;
+    font-size: 28px;
+    text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.8);
+  }
+  #bgArchitetsH h1::before {
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 425px) {
+  #bgArchitetsH h1 {
+    padding-inline: 20px;
+    font-size: 28px;
+    text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.8);
+  }
+  #bgArchitetsH h1::before {
+    font-size: 28px;
+  }
+}
+
+#projects {
+  display: flex;
+  flex-direction: column;
+  margin-top: 60px;
+}
+
+#projects .listProjects {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 20px 20px;
+}
+
+#projects .listProjects li {
+  position: relative;
+}
+
+#projects .listProjects li:nth-of-type(4n + 1)::before {
+  position: absolute;
+  content: "Country's house";
+  font-style: italic;
+  max-width: 60ch;
+  padding: 10px;
+  background: rgba(0, 0, 0, 0.589);
+  color: white;
+  border-bottom-right-radius: 8px;
+}
+
+#projects .listProjects li:nth-of-type(4n + 2)::before {
+  position: absolute;
+  content: "City's house";
+  font-style: italic;
+  max-width: 60ch;
+  padding: 10px;
+  background: rgba(0, 0, 0, 0.589);
+  color: white;
+  border-bottom-right-radius: 8px;
+}
+
+#projects .listProjects li:nth-of-type(4n + 3)::before {
+  position: absolute;
+  content: "Mountain's house";
+  font-style: italic;
+  max-width: 60ch;
+  padding: 10px;
+  background: rgba(0, 0, 0, 0.589);
+  color: white;
+  border-bottom-right-radius: 8px;
+}
+
+#projects .listProjects li:nth-of-type(4n + 4)::before {
+  position: absolute;
+  content: "Beach's house";
+  font-style: italic;
+  max-width: 60ch;
+  padding: 10px;
+  background: rgba(0, 0, 0, 0.589);
+  color: white;
+  border-bottom-right-radius: 8px;
+}
+
+#projects .listProjects li img {
+  height: 400px;
+  width: 400px;
+  object-fit: cover;
+  object-position: center;
+}
+
+@media (max-width: 768px) {
+  #projects .listProjects {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 425px) {
+  #projects .listProjects {
+    grid-template-columns: 1fr;
+  }
+}
+
+#about {
+  display: flex;
+  flex-direction: column;
+}
+
+#about > p {
+  text-align: justify;
+  max-width: 180ch;
+  margin-bottom: 60px;
+}
+
+#about .architectList {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+#about .architectList li {
+  display: flex;
+  flex-direction: column;
+}
+
+#about .architectList li div {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding-inline: 10px;
+}
+
+#about .architectList li div > h2 {
+  font-size: 26px;
+}
+
+#about .architectList li div > span {
+  font-size: 18px;
+  font-weight: 200;
+  font-style: italic;
+}
+
+#about .architectList li div > p {
+  max-width: 30ch;
+  text-align: justify;
+  height: 150px;
+}
+
+#about .architectList li div > p > span {
+  font-style: italic;
+}
+
+#about .architectList li div > a {
+  text-align: center;
+  color: black;
+  padding: 10px 0;
+  background: rgba(0, 0, 0, 0.11);
+}
+
+#about .architectList li div > a:hover {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+#about .architectList li img {
+  width: 400px;
+  height: 400px;
+  margin-bottom: 20px;
+  transition: all .4s ease-in-out;
+}
+
+#about .architectList li img:hover {
+  transform: translate(5px, -5px);
+  box-shadow: -3px 3px 5px rgba(0, 0, 0, 0.4);
+}
+
+@media (max-width: 768px) {
+  #about .architectList {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 425px) {
+  #about .architectList {
+    grid-template-columns: 1fr;
+  }
+}
+
+#contacts {
+  display: flex;
+  flex-direction: column;
+}
+
+#contacts form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  position: relative;
+}
+
+#contacts form > p {
+  font-size: 18px;
+}
+
+#contacts form input {
+  padding: 10px;
+  text-transform: capitalize;
+}
+
+#contacts form .name,
+#contacts form .email,
+#contacts form .project,
+#contacts form .textA {
+  position: absolute;
+  font-size: 12px;
+  left: 10px;
+  color: red;
+}
+
+#contacts form .name {
+  bottom: 235px;
+}
+
+#contacts form .email {
+  bottom: 174px;
+}
+
+#contacts form .project {
+  bottom: 114px;
+}
+
+#contacts form .textA {
+  bottom: 54px;
+}
+
+#contacts form textarea {
+  padding: 10px;
+  resize: none;
+  text-transform: capitalize;
+}
+
+#contacts form > button {
+  align-self: flex-start;
+  font-size: 18px;
+  border: none;
+  background: #000;
+  text-transform: uppercase;
+  margin-top: 10px;
+  padding: 10px 20px;
+  color: white;
+  cursor: pointer;
+}
+
+#contacts form > button:hover {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+@media (max-width: 425px) {
+  #contacts form .name,
+  #contacts form .email,
+  #contacts form .project,
+  #contacts form .textA {
+    position: absolute;
+    font-size: 9px;
+    left: 10px;
+    color: red;
+  }
+  #contacts form .name {
+    bottom: 235px;
+  }
+  #contacts form .email {
+    bottom: 174px;
+  }
+  #contacts form .project {
+    bottom: 114px;
+  }
+  #contacts form .textA {
+    bottom: 54px;
+  }
+}
+
+#bgArchitetsF {
+  background-image: url(../assets//roteiro-dubai-3-dias.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: bottom;
+  background-size: cover;
+  height: 600px;
+  position: relative;
+}
+
+#bgArchitetsF:before {
+  content: "";
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.1), transparent, transparent);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+footer .footerList {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 24px;
+  margin: 40px 0 20px;
+}
+
+footer .footerList .socialC {
+  display: flex;
+  gap: 20px;
+}
+
+footer .footerList .socialC svg {
+  display: flex;
+  align-items: center;
+  width: 32px;
+  height: 32px;
+}
+
+@media (max-width: 768px) {
+  footer .footerList {
+    font-size: 18px;
+  }
+  footer .footerList .socialC {
+    gap: 10px;
+  }
+  footer .footerList .socialC svg {
+    width: 28px;
+    height: 28px;
+  }
+}
+
+@media (max-width: 425px) {
+  footer .footerList {
+    font-size: 16px;
+  }
+  footer .footerList .socialC {
+    gap: 10px;
+  }
+  footer .footerList .socialC svg {
+    width: 24px;
+    height: 24px;
+  }
+}

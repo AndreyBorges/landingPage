@@ -1,0 +1,74 @@
+#bgArchitetsH {
+  background-image: url(../assets//roteiro-dubai-3-dias.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: bottom;
+  background-size: cover;
+  height: 710px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  &:before {
+    content: "";
+    background: linear-gradient(
+      180deg,
+      transparent,
+      transparent,
+      rgba(255, 255, 255, 0.3)
+    );
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+  }
+  h1 {
+    font-weight: 400;
+    font-size: 36px;
+    color: white;
+    text-shadow: 5px 5px 3px rgba(0, 0, 0, .8);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    &::before {
+      content: "BR";
+      font-weight: 500;
+      width: 80px;
+      height: 80px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-shadow: initial;
+      background: rgba(0, 0, 0, 0.7);
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  #bgArchitetsH {
+    h1 {
+      padding-inline: 20px;
+      font-size: 28px;
+      text-shadow: 3px 3px 3px rgba(0, 0, 0, .8);
+
+      &::before {
+        font-size: 28px;
+      }
+    }
+  }
+}
+
+@media (max-width: 425px) {
+  #bgArchitetsH {
+    h1 {
+      padding-inline: 20px;
+      font-size: 28px;
+      text-shadow: 3px 3px 3px rgba(0, 0, 0, .8);
+
+      &::before {
+        font-size: 28px;
+      }
+    }
+  }
+}
